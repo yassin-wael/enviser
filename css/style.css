@@ -169,6 +169,7 @@ body
 .card .ctype
 {
     float: right;
+    font-weight: 600;
 }
 .card .ddate
 {
@@ -193,17 +194,45 @@ body
     right: 10%;
 }
 /* card back */
+.card-back
+{
+    padding: 0;
+    transform: rotateY(180deg);
+}
 .backdetails
 {
     position: relative;
 }
 .backdetails .line
 {
+    top: 120px;
     position: absolute;
     width: 100%;
-    height: 40px;
+    height: 50px;
     background: rgb(121, 121, 121);
 }
+.b-link
+{
+    padding: 10px 0px 0px 20px;
+    font-size: 10px;
+}
+.cvv
+{
+    width: 40%;
+    height: 30px;
+    background: #fff;
+    margin: 20px;
+    color: #000;
+    position: absolute;
+}
+.cvv p
+{
+    position: absolute;
+    right: 12px;
+    top: 7px;
+    font-weight: 700;
+}
+/* /////////////// effects //////////// */
 .effects
 {
 
