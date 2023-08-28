@@ -6,6 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     transition: 0.5s;
+    scroll-behavior: smooth;
 }
 body
 {
@@ -29,7 +30,7 @@ body
    padding: 0px 10%;
    top: 0px;
    background-color: rgb(0, 0, 0);
-   z-index: 100;
+   z-index: 110;
 }
 .logo
 {
@@ -321,13 +322,17 @@ position: relative;
 .ndsec 
 {
     color: white;
-    padding: 35px 0px 0px 0px;
+    padding: 80px 0px 110px 0px;
+}
+.nd-content
+{
+    margin: 70px 0;
 }
 .ndsec .nd-sec-text
 {
     width: 40%;
     float: left;
-    margin: 0px 12% 0px 0px;
+    margin: 65px 12% 0px 0px;
 }
 .ndsec .nd-sec-text h2
 {
@@ -340,6 +345,7 @@ position: relative;
 .ndsec .card-types
 {
     position: relative;
+    margin: 90px 0px;
 }
 .ndsec img
 {
@@ -375,4 +381,49 @@ position: relative;
     transform: matrix(0.8,-0.9,0.99,0.43,153,-85);
     z-index: 101;
 }
-
+/* ///////////// END OF SECTION 2 ///////////// */
+.cf-parent
+{
+    position: relative;
+    color: rgb(183, 183, 183);
+    padding: 50px 0px
+}
+.cf-parent h2
+{
+    margin: 30px auto;
+    letter-spacing: -13px;
+    opacity: 0;
+    transition: .6s;
+}
+.cf-parent:hover h2 
+{
+    letter-spacing: normal;
+    opacity: 1;
+    color: #fff;
+}
+.cf-parent .item
+{
+    width: 30%;
+    float: left;
+    /* height: 80px; */
+    background: linear-gradient(to right bottom, #ff00007a 20%, rgba(0, 0, 0, 0.379) 50%);
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 1.5%;
+    animation-name: card1;
+}
+.item a
+{
+    color: #fff;
+    font-size: 13px;
+    padding: 3px 10px;
+    display: block;
+    width: 45%;
+    border: 1px solid;
+    border-radius: 7px;
+}
+.cf-parent .item:hover p
+{
+    color: #fff;
+}
