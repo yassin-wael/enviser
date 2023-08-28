@@ -390,14 +390,18 @@ position: relative;
 }
 .cf-parent h2
 {
-    margin: 30px auto;
-    letter-spacing: -13px;
-    opacity: 0;
-    transition: .6s;
+    font-size: 30px;
+    margin: 30px 0px;
+    /* letter-spacing: -13px; */
+    opacity: 1;
+    text-shadow: 0px 0px 1.3px white;
+    transition: .3s;
+    color: rgb(4, 2, 23);
+
 }
 .cf-parent:hover h2 
 {
-    letter-spacing: normal;
+    /* letter-spacing: normal; */
     opacity: 1;
     color: #fff;
 }
@@ -412,6 +416,30 @@ position: relative;
     border-radius: 20px;
     margin: 1.5%;
     animation-name: card1;
+    position: relative;
+    overflow: hidden;
+}
+.cf-parent .ita::after , .itb::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+    transition: .4s;
+    background: linear-gradient(to left bottom, #ff00007a 20%, rgba(0, 0, 0, 0.379) 50%);
+}
+.cf-parent .itb::after
+{
+    opacity: 1;
+    background: linear-gradient(to right top, #ff00007a 20%, rgba(0, 0, 0, 0.379) 50%);
+}
+.cf-parent .item:hover.itb::after
+{
+    opacity: 0;
 }
 .item a
 {
@@ -419,11 +447,73 @@ position: relative;
     font-size: 13px;
     padding: 3px 10px;
     display: block;
-    width: 45%;
+    width: fit-content;
     border: 1px solid;
     border-radius: 7px;
 }
 .cf-parent .item:hover p
 {
     color: #fff;
+}
+/* end of section 3 */
+.serv-parent
+{
+   
+}
+.phone
+{
+    width: 300px;
+    height: 500px;
+    background: #000;
+    border-radius: 32px;
+    position: relative;
+}
+.phone-screen
+{
+    width: 97%;
+    left: 2%;
+    top: 5px;
+    height: 95%;
+    position: absolute;
+    border-radius: inherit;
+    background-color: #fff;
+}
+.camera
+{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 10px auto;
+    background: #000;
+}
+.phone  img{
+    position: absolute;
+    background: #000;
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: app;
+    animation-duration: 4s;
+    border-radius: 32px;
+    animation-iteration-count: infinite;
+}
+@keyframes app {
+    0%
+    {
+        height: 40px;
+        width: 40px;
+    }
+    40% 
+    {
+        width: 40px;
+        height: 40px;
+    }
+    100%
+    {
+        width: 100%;
+        height: 100%;
+    }
 }
