@@ -23,7 +23,7 @@ body
 }
 .header
 {
-   position: fixed;
+   position: sticky;
    width: 100%;
    height: 60px;
    padding: 0px 10%;
@@ -108,6 +108,12 @@ body
     z-index: 100;
     perspective: 100px;
 }
+.home-view
+{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
 .backg
 {
     background: url(../images/enviser.png) no-repeat;
@@ -123,6 +129,7 @@ body
     transition: transform 1s;
     transform-style: preserve-3d;
     perspective: 500px;
+    float: left;
 }
 .home .card, .card-back
 {
@@ -132,7 +139,7 @@ body
     background: #000;
     border-radius: 18px;
     padding: 25px;
-    margin: 15% 0;
+    /* margin: 13% 0; */
     /* box-shadow: 5px 5px 120px 1px rgba(255, 255, 255, 0.557)  */
 }
 .card-back, .front
@@ -263,19 +270,24 @@ body
 .effects
 {
 
-    width: 480px;
-    height: fit-content;
-    padding: 55px 0 0;
-    position: relative;
+float: left;
+
+width: fit-content;
+
+height: fit-content;
+
+/* padding: 55px 0 0; */
+
+position: relative;
 }
 .circle1
 {
-    background-color: yellow;
+    /* background-color: yellow; */
     position: absolute;
     right: 0;
     top: 97px;
     border-radius: 15%;
-    box-shadow: -130px 97px 100px 72px yellow;
+    box-shadow: -74px -24px 100px 72px rgb(255 255 0 / 46%);
 }
 .circle2
 {
@@ -285,4 +297,23 @@ body
     bottom: 20px;
     border-radius: 50%;
     box-shadow: 78px -27px 100px 72px blue; 
+}
+/* //////// home content  /////////// */
+.home-content
+{
+    float: right;
+    color: white;
+    width: 40%;
+    margin: 30px 0px 0px 30px;
+    top: 0;
+    right: 0;
+    /* position: absolute; */
+}
+.home-content h1
+{
+    font-size: 50px;
+}
+.home-content p
+{
+    font-size: 25px;
 }
