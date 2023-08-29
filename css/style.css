@@ -531,6 +531,10 @@ position: relative;
     }
 }
 /* in mob screen */
+.services
+{
+    margin-top: 150px;
+}
 .inmob
 {
     position: absolute;
