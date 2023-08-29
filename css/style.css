@@ -458,7 +458,7 @@ position: relative;
 /* end of section 3 */
 .serv-parent
 {
-   
+   position: relative;
 }
 .phone
 {
@@ -468,6 +468,7 @@ position: relative;
     background: #000;
     border-radius: 32px;
     position: relative;
+    float: left;
 }
 .phone-screen
 {
@@ -478,6 +479,7 @@ position: relative;
     position: absolute;
     border-radius: inherit;
     background-color: #fff;
+    overflow: hidden;
 }
 .camera
 {
@@ -657,3 +659,37 @@ position: relative;
 {
     margin: 10px 0px 12px;
 }
+/* end of mobile app */
+.app-details-desc
+{
+    float: right;
+    width: 45%;
+    color: #ffff;
+    position: absolute;
+    right: 10px;
+    top: 150px;
+    word-spacing: 1.7px;
+}
+.app-details-desc h3
+{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.app-details-desc .buttons a
+{
+    margin: 20px 0px;
+}
+.app-details-desc .buttons a
+{
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+    color: #000;
+    background: #fff;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+/* ############# END OF services section ###############*/
