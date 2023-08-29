@@ -464,6 +464,7 @@ position: relative;
 {
     width: 300px;
     height: 500px;
+    margin-left: 80px;
     background: #000;
     border-radius: 32px;
     position: relative;
@@ -486,7 +487,7 @@ position: relative;
     margin: 10px auto;
     background: #000;
 }
-.phone  img{
+.phone  .app{
     position: absolute;
     background: #000;
     border-radius: 20px;
@@ -516,4 +517,78 @@ position: relative;
         width: 100%;
         height: 100%;
     }
+}
+/* in mob screen */
+.inmob
+{
+    width: 90%;
+    height: 37%;
+    background: #000;
+    color: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    animation-name: app-card;
+}
+.visa-logo2 img
+{
+    width: 50px;
+    float: right;
+    position: absolute;
+    height: 15px;
+    right: -99px;
+}
+.v2 h3
+{
+    font-size: 13px;
+    margin: 11px 7.1px;
+    word-spacing: 8px;
+}
+.expiry2
+{
+    font-size: 9px;
+}
+.phone .card-name h4
+{
+    float: left;
+}
+.app-details
+{
+    position: absolute;
+    width: 88%;
+    top: 250px;
+    left: 20px;
+    animation-name: app-details;
+}
+.app-details h3 , .P2
+{
+    line-height: 40px;
+}
+.P2
+{
+    color: #fff;
+    background: blue;
+    font-weight: 600;
+    border-radius: 8px;
+    text-align: center;
+    margin: 3px 0px;
+}
+.offers
+{
+    margin: 10px 0px;
+    font-size: 15px;
+}
+.offers div
+{
+    border-radius: 10px;
+    width: 30%;
+    height: 80px;
+    background-color: #000;
+    float: left;
+    margin: 5% 1.6%;
+    padding: 15px;
+}
+.offers div hr
+{
+    margin: 10px 0px 12px;
 }
