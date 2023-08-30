@@ -853,12 +853,18 @@ position: relative;
     }
 }
 /* ############# END OF ANIMATION ############ */
+.env-feat
+{
+    margin: 4rem 0px;
+    padding-top: 4.2rem;
+}
 section .rotate-cards-parent
 {
     position: relative;
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
+    gap: 35px;
 }
 .rotate-card , .rtfront, .rtback
 {
@@ -886,16 +892,20 @@ section .rotate-cards-parent
 }
 .rtfront
 {
-    background: #777;
+    background: linear-gradient(45deg, black, #2a0000);
     z-index: 1;
     text-align: center;
     padding: 8rem 0rem;
     backface-visibility: hidden;
 }
-
+.rtfront p
+{
+    font-size: 0.6rem;
+    margin: 14px;
+}
 .rtback
 {
-    background: #222;
+    background: rgba(34, 34, 34, 0.573);
     transform: rotateY(180deg);
 }
 .rotate-card .rtback h3
@@ -919,7 +929,7 @@ section .rotate-cards-parent
 {
     text-align: center;
     width: 100%;
-    margin: 5.4rem 0.1rem 0rem;
+    margin: 4.4rem 0.1rem 0rem;
     background: transparent;
     border-radius: 0.9rem;
 }
@@ -934,10 +944,6 @@ section .rotate-cards-parent
     width: 35%;
     height: 3px;
     right: 33%;
-    bottom: 0;
-    background: #000;
+    bottom: -5px;
+    background: #fff;
 }
-<<<<<<< HEAD
-=======
-/* ############# END OF services section ###############*/
->>>>>>> a2edb844faab2b9a55addbc891bef4d924d21344
