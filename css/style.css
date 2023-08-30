@@ -532,6 +532,10 @@ position: relative;
     }
 }
 /* in mob screen */
+.services
+{
+    margin-top: 150px;
+}
 .inmob
 {
     position: absolute;
@@ -933,3 +937,7 @@ section .rotate-cards-parent
     bottom: 0;
     background: #000;
 }
+<<<<<<< HEAD
+=======
+/* ############# END OF services section ###############*/
+>>>>>>> a2edb844faab2b9a55addbc891bef4d924d21344
