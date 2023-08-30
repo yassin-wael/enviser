@@ -84,7 +84,7 @@ body
     left: 0;
     width: 0;
     height: 3px;
-    background: #ffffff;
+    background: linear-gradient(45deg, #3c39ff 70%, red );
     transition: 0.5s;
 }
 .header .nav .header-active:after
@@ -459,6 +459,7 @@ position: relative;
 .serv-parent
 {
    position: relative;
+   padding: 70px 0px;
 }
 .phone
 {
@@ -683,17 +684,256 @@ position: relative;
 {
     margin: 20px 0px;
 }
-.app-details-desc .buttons a
+.app-details-desc .buttons a , .rotate-card a
 {
     display: inline-block;
-    width: 150px;
+    width: fit-content;
+    height: fit-content;
     margin-right: 10px;
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: #000;
     font-size: 17px;
     text-align: center;
     font-weight: 600;
-    padding: 5px 15px;
+    padding: 3.5% 15px;
     border-radius: 10px;
+    border: 1px solid;
+}
+.app-details-desc .buttons i
+{
+    font-weight: 400;
+    font-size: 25px;
+    margin-right: 3px;
+}
+.app-details-desc .buttons a:hover
+{
+    background: #fff;
+    color: #000;
 }
 /* ############# END OF services section ###############*/
+.animation-sec2
+{
+    position: relative;
+    display: none;
+}
+.animation-parent
+{
+    background: #3c39ff4f;
+    height: 500px;
+    padding: 2% 0px;
+}
+.animation-parent .child
+{
+    width: 100%;
+    height: 14.4%;
+    margin-bottom: 1.6%;
+    background: #fff;
+    position: relative;
+}
+.animation-parent .child .child1, .child2  , .child3, .child4, .child5 , .child6
+{
+    height: 100%;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    background: black;
+    border-radius: 13px;
+}
+.animation-parent .child .child2 , .child4, .child6
+{
+    position: absolute;
+    left: 0;
+}
+.child1, .child2, .child3, .child4, .child5, .child6
+{
+    animation: child2  3s  ease-in-out  3s  2  alternate forwards running;
+    animation-name: child2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+.child1
+{
+    /* animation: child1  3s  ease-in-out  0s  4  alternate forwards; */
+    animation-delay: 0s;
+}
+.child3 
+{
+    animation-name: child3;
+    animation-delay: 6s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+}
+.child4
+{
+    animation-name: child4;
+    animation-delay: 10s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.child5
+{
+    animation-name: child5;
+    animation-delay: 14s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+}
+.child6
+{
+    animation-name: child6;
+    animation-delay: 18s;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+.child img
+{
+    width: 60px;
+    margin: 10px 45px;
+}
+@keyframes child1 {
+    0%
+    {
+        right: 0;
+    }
+    100%
+    {
+        right: 81%;
+    }
+}
+@keyframes child2 {
+    0%
+    {
+        left: 0;
+    }
+    100%
+    {
+        left: 81%;
+    }
+}
+@keyframes child3 {
+    0%
+    {
+        right: 81%;
+    }
+    100%
+    {
+        right: 0px;
+    }
+}
+@keyframes child4 {
+    0%
+    {
+        left: 0;
+    }
+    100%
+    {
+        left: 81%;
+    }
+}
+@keyframes child5 {
+    0%
+    {
+        right: 81%;
+    }
+    100%
+    {
+        right: 0px;
+    }
+}
+@keyframes child6 {
+    0%
+    {
+        left: 0;
+    }
+    100%
+    {
+        left: 81%;
+    }
+}
+/* ############# END OF ANIMATION ############ */
+section .rotate-cards-parent
+{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+.rotate-card , .rtfront, .rtback
+{
+    width: 30%;
+    height: 350px;
+    /* background: #222; */
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 1.3rem;
+    transition: transform 1.4s;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+.rotate-card:hover
+{
+    transform: rotateY(180deg);
+}
+.rtfront, .rtback
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.rtfront
+{
+    background: #777;
+    z-index: 1;
+    text-align: center;
+    padding: 8rem 0rem;
+    backface-visibility: hidden;
+}
+
+.rtback
+{
+    background: #222;
+    transform: rotateY(180deg);
+}
+.rotate-card .rtback h3
+{
+    font-size: 1.2rem;
+}
+.rotate-card .rtback h3
+{
+    font-size: 1.9rem;
+    margin: 1rem 0px;
+}
+.rotate-card .rtback p
+{
+    margin: 0.8rem 0;
+}
+.rotate-card .rtback i
+{
+    margin: 0px 0.2rem;
+}
+.rotate-card .rtback .rta
+{
+    text-align: center;
+    width: 100%;
+    margin: 5.4rem 0.1rem 0rem;
+    background: transparent;
+    border-radius: 0.9rem;
+}
+.aft
+{
+    position: relative;
+}
+.rtfront .aft::after
+{
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 3px;
+    right: 33%;
+    bottom: 0;
+    background: #000;
+}
