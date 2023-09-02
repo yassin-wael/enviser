@@ -959,5 +959,62 @@ section .rotate-cards-parent
     transform: translate(5%, 5%);
     border: 1px solid white;
     border-radius: 14px 0px;
-
+}
+/* end rotate cards */
+.updates-parent
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 1.3rem 0;
+    color: #fff;
+}
+.upi1
+{
+    width: 35%;
+    border: 1px solid #fff;
+    /* padding: 0px 0px 1.3rem 0rem; */
+    border-radius: 1.2rem;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    /* gap: 40px; */
+    background: #012;
+}
+.updates-parent figure
+{
+    width: 100%;
+     height: 300px; 
+    /*margin-bottom: 1.9rem;*/
+    z-index: 100;
+}
+figure [alt="updates(v)"]
+{
+    width: 100%;
+    height: 100%;
+}
+.up1text
+{
+    padding: 17px 1.1rem;
+    /* margin: 0 .8rem; */
+    /* overflow: hidden; */
+    position: relative;
+    background: #00000072;
+    /* border-radius: 1.2rem; */
+}
+.up1text h3
+{
+    margin-bottom: .5rem;
+}
+.up1text::after
+{
+    content: "ENVISER";
+    position: absolute;
+    transform: matrix(11, 0, 0, 11, 680, -40);
+    opacity: .1;
+    transition: transform .8s ease-in-out;
+}
+.upi1:hover .up1text::after
+{
+    transform: matrix(11, 0, 0, 10.4, 170, -40);
 }
