@@ -501,6 +501,7 @@ position: relative;
     transform: translate(-50%, -50%);
     animation-name: app;
     animation-duration: 3s;
+    /* animation-delay: .5s; */
     border-radius: 32px;
     animation-iteration-count: 3;
     animation-fill-mode: forwards;
@@ -610,7 +611,6 @@ position: relative;
     animation-delay: 3.2s;
     animation-iteration-count: 3;
     animation-timing-function: ease-out;
-    animation-iteration-count: 3;
     animation-fill-mode: forwards;
 }
 @keyframes app-details {
@@ -946,4 +946,18 @@ section .rotate-cards-parent
     right: 33%;
     bottom: -5px;
     background: #fff;
+}
+.rtfront::after
+{
+    content: "";
+    position: absolute;
+    /* background: #3c39ff; */
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    transform: translate(5%, 5%);
+    border: 1px solid white;
+    border-radius: 14px 0px;
+
 }
