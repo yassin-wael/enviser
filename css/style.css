@@ -684,7 +684,7 @@ position: relative;
 {
     margin: 20px 0px;
 }
-.app-details-desc .buttons a , .rotate-card a
+.app-details-desc .buttons a , .rotate-card a , .up1text a
 {
     display: inline-block;
     width: fit-content;
@@ -853,7 +853,7 @@ position: relative;
     }
 }
 /* ############# END OF ANIMATION ############ */
-.env-feat
+.env-feat, .updates-parent , .spinner
 {
     margin: 4rem 0px;
     padding-top: 4.2rem;
@@ -874,7 +874,7 @@ section .rotate-cards-parent
     color: #fff;
     padding: 1.2rem;
     border-radius: 1.3rem;
-    transition: transform 1.4s;
+    transition: transform 1s;
     transform-style: preserve-3d;
     perspective: 500px;
 }
@@ -965,21 +965,28 @@ section .rotate-cards-parent
 {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    margin: 1.3rem 0;
+    justify-content: space-around;
+    padding-top: 5.2rem;
     color: #fff;
 }
 .upi1
 {
-    width: 35%;
+    width: 32%;
     border: 1px solid #fff;
-    /* padding: 0px 0px 1.3rem 0rem; */
     border-radius: 1.2rem;
     overflow: hidden;
     display: flex;
     flex-flow: column;
-    /* gap: 40px; */
     background: #012;
+}
+.upi1:hover
+{
+    box-shadow: 2px 3px 10px 3px rgb(255 255 255 / 25%);
+    transform: scale(1.01);
+}
+.upi1:hover img
+{
+    transform: scale(1.4);
 }
 .updates-parent figure
 {
@@ -987,6 +994,7 @@ section .rotate-cards-parent
      height: 300px; 
     /*margin-bottom: 1.9rem;*/
     z-index: 100;
+    overflow: hidden;
 }
 figure [alt="updates(v)"]
 {
@@ -1011,10 +1019,22 @@ figure [alt="updates(v)"]
     content: "ENVISER";
     position: absolute;
     transform: matrix(11, 0, 0, 11, 680, -40);
+    transform: matrix(11, 0, 0, 16.4, 980, -74);
     opacity: .1;
-    transition: transform .8s ease-in-out;
+    transition: transform .6s ease-in-out;
 }
-.upi1:hover .up1text::after
+.upi1:hover .up1text::after 
 {
-    transform: matrix(11, 0, 0, 10.4, 170, -40);
+    transform: matrix(11, 0, 0, 16.4, 170, -74);
 }
+.up1text a
+{
+    font-size: .7rem;
+    display: block;
+    margin: 0.6rem auto 0;
+    width: 92%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.314);
+    /* z-index: 100; */
+}
+/* <!-- end of updates section  --> */
