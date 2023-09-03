@@ -10,7 +10,7 @@
 }
 body
 {
-    background-color: rgb(4, 2, 23);
+    background-color: #040217;
     perspective: 600px;
 }
 .container
@@ -1035,3 +1035,64 @@ figure [alt="updates(v)"]
     /* z-index: 100; */
 }
 /* <!-- end of updates section  --> */
+.loader .loader-parent 
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 6rem 0 10px;
+}
+.loader .loader-parent .ldr 
+{
+    width: 20%;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    padding: 1rem 6px;
+    border-right: 1px solid white;
+    overflow: hidden;
+    transition: all .5;
+}
+.icon-re
+{
+    position: relative;
+    overflow: hidden;
+}
+.loader .loader-parent .ldr i
+{
+    font-size: 2.4rem;
+    margin: 1.3rem;
+}
+.loader .loader-parent .ldr p
+{
+    line-height: 1.2rem;
+}
+.loader .loader-parent .ldr .ldr-p
+{
+    font-size: .99rem;
+    color: gray;
+    font-weight: 500;
+}
+.loader .loader-parent .ldr .risup
+{
+    position: absolute;
+    color: #3431dc;
+    top: 0;
+    left: 0;
+    transform: translateY(180px);
+}
+.loader .loader-parent .ldr:hover .hidup 
+{
+    transform: translateY(-100px);
+}
+.loader .loader-parent .ldr:hover .risup 
+{
+    transform: translateY(0px);
+}
+.loader .loader-parent .ldrlast
+{
+    border: 0;
+}
