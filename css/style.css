@@ -498,7 +498,7 @@ position: relative;
     transform: translate(-50%, -50%);
     animation-name: app;
     animation-duration: 3s;
-    /* animation-delay: .5s; */
+    /* animation-delay: 10s; */
     border-radius: 32px;
     animation-iteration-count: 3;
     animation-fill-mode: forwards;
@@ -1070,6 +1070,10 @@ figure [alt="updates(v)"]
 {
     line-height: 1.2rem;
 }
+.loader .loader-parent .ldr .ldr-desc::first-line
+{
+    font-weight: 700;
+}
 .loader .loader-parent .ldr .ldr-p
 {
     font-size: .99rem;
@@ -1079,10 +1083,14 @@ figure [alt="updates(v)"]
 .loader .loader-parent .ldr .risup
 {
     position: absolute;
-    color: #3431dc;
+    color: #fff;
     top: 0;
     left: 0;
     transform: translateY(180px);
+}
+.loader .loader-parent .ldr .hidup
+{
+    color: #91a3ff;
 }
 .loader .loader-parent .ldr:hover .hidup 
 {
@@ -1095,4 +1103,17 @@ figure [alt="updates(v)"]
 .loader .loader-parent .ldrlast
 {
     border: 0;
+}
+/* details */
+.bgen
+{
+    background: url(../images/enviser.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: -16%;
+    left: 5%;
+    opacity: 0.1;
 }
