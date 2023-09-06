@@ -10,7 +10,7 @@
 }
 body
 {
-    background-color: #040217;
+    background-color: #040214;
     perspective: 600px;
 }
 .container
@@ -24,13 +24,15 @@ body
 }
 .header
 {
-   position: sticky;
-   width: 100%;
-   height: 60px;
-   padding: 0px 10%;
-   top: 0px;
-   background-color: rgb(0, 0, 0);
-   z-index: 110;
+    position: sticky;
+    width: 90%;
+    margin: auto;
+    border-radius: 0px 0px 25px 25px;
+    height: 60px;
+    padding: 0px 10%;
+    top: 0px;
+    background-color: #000000c4;
+    z-index: 110;
 }
 .logo
 {
@@ -425,6 +427,7 @@ position: relative;
 {
     width: 100%;
     background: linear-gradient(to right bottom, #ff00007a 20%, rgba(0, 0, 0, 0.379) 50%);
+    /* background: linear-gradient(to right bottom, #91a3ff -50%, rgba(0, 0, 0, 0.379) 60%); */
     padding: 20px;
     border: 1px solid;
     border-radius: 20px;
@@ -497,8 +500,9 @@ position: relative;
     top: 50%;
     transform: translate(-50%, -50%);
     animation-name: app;
+    animation-delay: 8s;
     animation-duration: 3s;
-    /* animation-delay: 10s; */
+    /* animation-delay: 1s; */
     border-radius: 32px;
     animation-iteration-count: 3;
     animation-fill-mode: forwards;
@@ -548,7 +552,7 @@ position: relative;
     border-radius: 15px;
     animation-name: app-card;
     animation-duration: 3s;
-    animation-delay: 3s;
+    animation-delay: 11s;
     animation-timing-function: ease-out;
     animation-iteration-count: 3;
     animation-fill-mode: forwards;
@@ -605,7 +609,7 @@ position: relative;
     opacity: 0;
     animation-name: app-details;
     animation-duration: 3s;
-    animation-delay: 3.2s;
+    animation-delay: 11.2s;
     animation-iteration-count: 3;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
@@ -1116,4 +1120,61 @@ figure [alt="updates(v)"]
     top: -16%;
     left: 5%;
     opacity: 0.1;
+}
+/* ////////////////// footer //////////////// */
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    height: 300px;
+    color: rgb(224, 224, 224);
+    background: #141414;
+    margin-top: 10rem;
+}
+.footer-main {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-basis: 300px;
+    padding: 0rem 2rem;
+    border-right: 2px solid #adadad;
+}
+.footer-main img
+{
+    margin-left: -1rem;
+}
+.footer-main h2
+{
+    font-size: 2rem;
+}
+.footer-main p
+{
+    color: #3a3a3a;
+    font-size: .8rem;
+}
+.footer-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.9rem;
+    width: 60%;
+    text-transform: uppercase;
+}
+.f-products, .f-general,  .f-social {
+    display: flex;
+    flex-direction: column;
+    gap: 25%;
+}
+.f-products a, .f-general a, .f-social a {
+    display: block;
+    font-weight: 700;
+    font-size: .9rem;
+    margin: 8px 0;
+    color:  #adadad;
+}
+.f-products::after
+{
+    content: "DOCUMENTAION";
+    color:  #3a3a3a;
+    margin-top: -15px;
 }
