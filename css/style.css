@@ -1125,7 +1125,7 @@ figure [alt="updates(v)"]
 .footer {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     height: 300px;
     color: rgb(224, 224, 224);
     background: #141414;
@@ -1138,7 +1138,7 @@ figure [alt="updates(v)"]
     justify-content: space-around;
     flex-basis: 300px;
     padding: 0rem 2rem;
-    border-right: 2px solid #adadad;
+    border-right: 2px solid #747474;
 }
 .footer-main img
 {
@@ -1175,6 +1175,7 @@ figure [alt="updates(v)"]
 .f-products::after
 {
     content: "DOCUMENTAION";
-    color:  #3a3a3a;
+    color: #3a3a3a;
     margin-top: -15px;
+    font-weight: 600;   
 }
