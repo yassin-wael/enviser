@@ -32,6 +32,9 @@ body
     padding: 0px 10%;
     top: 0px;
     background-color: #000000d0;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    border-bottom: 1px solid #6672ff4f;
     z-index: 110;
 }
 .logo
